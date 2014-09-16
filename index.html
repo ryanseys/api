@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ryan's API</title>
+  <title>Loading...</title>
 </head>
 <body>
 <script>
 
+  // Thanks https://mathiasbynens.be/notes/xhr-responsetype-json
   var getJSON = function(url, successHandler, errorHandler) {
     var xhr = new XMLHttpRequest();
     xhr.open('get', url, true);
@@ -23,11 +24,9 @@
     xhr.send();
   };
 
-
-  getJSON('http://api.ryanseys.com/name.json', function(data) {
-    h1title.innerHTML = 'Welcome to ' + data.first + '\'s API.';
-  }, function(status) {
-    alert('Something went wrong.' + status);
+  getJSON('http://api.ryanseys.com/name.json', function(name) {
+    document.title = name.first + '\'s API';
+    h1title.innerHTML = 'Welcome to ' + name.first + '\'s API.';
   });
 
 </script>
