@@ -1,5 +1,7 @@
+---
+---
 {
-  "first": "Ryan",
-  "last": "Seys",
-  "full": "Ryan Seys"
+  "first": "{{ site.first_name }}",
+  "last": "{{ site.last_name }}",
+  "full": "{{ site.first_name }} {{ site.last_name }}"
 }
