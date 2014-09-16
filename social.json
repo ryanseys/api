@@ -1,6 +1,6 @@
 {
-  "fb": "ryan.seys",
-  "twitter": "ryanseys",
-  "github": "ryanseys",
-  "gplus": "ryanseys1"
+  "facebook": "{{ site.username }}",
+  "twitter": "{{ site.username }}",
+  "github": "{{ site.username }}",
+  "gplus": "{{ site.username }}1"
 }
