@@ -4,5 +4,5 @@
   "facebook": "{{ site.username }}",
   "twitter": "{{ site.username }}",
   "github": "{{ site.username }}",
-  "gplus": "{{ site.username }}1"
+  "googleplus": "{{ site.username }}1"
 }
