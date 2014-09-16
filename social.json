@@ -1,3 +1,5 @@
+---
+---
 {
   "facebook": "{{ site.username }}",
   "twitter": "{{ site.username }}",
