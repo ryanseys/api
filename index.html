@@ -24,7 +24,7 @@
     xhr.send();
   };
 
-  getJSON('http://api.ryanseys.com/name.json', function(name) {
+  getJSON('/name.json', function(name) {
     var new_title = name.first + '\'s API';
     document.title = new_title;
     h1title.innerHTML = 'Welcome to ' + new_title;
